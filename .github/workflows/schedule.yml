@@ -1,0 +1,22 @@
+name: scheduled Pipeline
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Linting code"
+
+  report:
+    runs-on: ubuntu-latest
+    needs: [test, lint]
+    steps:
+      - run: echo "Generating report"
