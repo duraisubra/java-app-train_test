@@ -33,3 +33,13 @@ jobs:
           python3 --version || echo 'Not installed'
           echo "=== Docker ==="
           docker --version || echo 'Not installed'
+
+test:
+    name: Test Job
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+        - name: Run Mock test
+        run: |
+            echo "Running unit test"
+            echo "all tests passed"
