@@ -10,7 +10,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.event.inputs.environment == 'prod'
+    if: github.event.inputs.environment == 'production'
 
     steps:
       - run: echo "Deploying to Production"
