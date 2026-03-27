@@ -2,7 +2,7 @@ name: scheduled Pipeline
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 9 * * *" --> Runs every day at 9 am
 
 jobs:
   test:
