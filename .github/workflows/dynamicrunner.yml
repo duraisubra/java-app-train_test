@@ -1,0 +1,14 @@
+name: Dynamic Runner
+
+on: workflow_dispatch
+
+env:
+  APP_TYPE: java   # change to 'dotnet'
+
+jobs:
+  build:
+    runs-on: ${{ env.APP_TYPE == 'java' && 'ubuntu-latest' || 'windows-latest' }}
+
+    steps:
+      - name: Show runner
+        run: echo "Running on $RUNNER_OS"
