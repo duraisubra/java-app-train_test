@@ -6,13 +6,16 @@ env:
   GLOBAL_ENV: "global-value"
 
 jobs:
-  demo:
+  deploy:
     runs-on: ubuntu-latest
-    
-    environment: production
+
+    environment: production  
 
     steps:
-      - name: use env vars
+      - name: Use environment variables
+        env:
+          API_URL: ${{ vars.API_URL }}
+          APP_MODE: ${{ vars.APP_MODE }}
         run: |
           echo "API URL: $API_URL"
-          echo "APP MODE: $APP_MODE"
+          echo "App Mode: $APP_MODE"
