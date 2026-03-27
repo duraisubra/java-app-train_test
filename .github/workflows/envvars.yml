@@ -19,3 +19,4 @@ jobs:
         run: |
           echo "API URL: $API_URL"
           echo "App Mode: $APP_MODE"
+          echo "DB password: $DB_PASSWORD"
