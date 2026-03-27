@@ -20,6 +20,6 @@ jobs:
           echo "API URL: $API_URL"
           echo "App Mode: $APP_MODE"
           echo "Deploying to $API_URL"
-          echo "DB password length: ${#DB_PASS}"
-          echo " DB password is ${DB_PASS}"
+          echo "DB password length: ${#DB_PASSWORD}"
+          echo " DB password is ${DB_PASSWORD}"
           
