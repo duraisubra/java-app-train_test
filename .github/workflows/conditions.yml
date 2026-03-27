@@ -5,7 +5,7 @@ on:
     inputs:
       environment:
         required: true
-        default: dev
+        default: development
 
 jobs:
   deploy:
