@@ -1,3 +1,5 @@
+name: scheduled Pipeline previous
+
 on:
   schedule:
     - cron: "*/5 * * * *"
