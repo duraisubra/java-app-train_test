@@ -17,9 +17,16 @@ jobs:
         with:
           distribution: 'temurin' 
           java-version: '17'
+          cache: 'maven'
 
       - name: Build with Maven
         run: mvn clean package
 
       - name: run tests
         run: mvn test
+
+      - name: upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-demo-artifact
+          path: target/*.jar
