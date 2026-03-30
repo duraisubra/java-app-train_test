@@ -25,7 +25,15 @@ jobs:
       - name: run tests
         run: mvn test
 
-      - name: upload Artifact
+      - name: Publish Test Report
+        uses: dorny/test-reporter@v3
+        if: always()   
+        with:
+          name: JUnit Tests
+          path: target/surefire-reports/*.xml
+          reporter: java-junit
+
+      - name: upload Artifacr
         uses: actions/upload-artifact@v4
         with:
           name: java-demo-artifact
