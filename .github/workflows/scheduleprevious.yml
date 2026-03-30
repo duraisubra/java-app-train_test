@@ -2,7 +2,7 @@ name: scheduled Pipeline previous
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+#    - cron: "*/5 * * * *"
 
 jobs:
   test:
