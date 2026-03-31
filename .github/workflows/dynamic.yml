@@ -1,6 +1,4 @@
-filename: dynamic.yml
-
-name: Java Build + Coverage (Dynamic Docker Runner)
+name: docker runner Java Build + Coverage (Dynamic Docker Runner)
 
 on:
   workflow_dispatch:
