@@ -1,8 +1,8 @@
-name: scheduled Pipeline
+name: schedule Pipeline
 
 on:
   workflow_dispatch:
-  schedule:
+#  schedule:
 #    - cron: "0 9 * * *"
 
 jobs:
