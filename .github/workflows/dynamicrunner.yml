@@ -1,4 +1,4 @@
-name: Smart Build Pipeline
+name: Smart Build Pipeline dynamic runner
 
 on:
   workflow_dispatch:

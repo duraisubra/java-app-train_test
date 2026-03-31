@@ -1,4 +1,4 @@
-name: All Conditions Demo
+name: Conditions Demo
 
 on:
   workflow_dispatch:

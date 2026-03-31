@@ -1,4 +1,4 @@
-name: Explore GitHub Components
+name: Explore GitHub Components firstworkflow
 
 on:
   workflow_dispatch:

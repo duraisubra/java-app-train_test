@@ -1,4 +1,4 @@
-name: Advanced Input Demo
+name: Advanced Input Demo - choice options
 
 on:
   workflow_dispatch:
