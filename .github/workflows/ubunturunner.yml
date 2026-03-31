@@ -1,4 +1,4 @@
-name: Java Build + Coverage (Linux)
+name: Ubuntu Java Build + Coverage (Linux)
 
 on:
   workflow_dispatch:
