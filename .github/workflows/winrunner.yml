@@ -39,7 +39,12 @@ jobs:
       - name: Build and generate coverage
         run: mvn clean verify
         shell: cmd
-
+        
+      # ── Fix safe.directory for downstream git consumers ──
+      - name: Mark repo as safe directory
+        run: git config --global --add safe.directory "$env:GITHUB_WORKSPACE"
+        shell: powershell
+      
       # ── Publish JUnit results ──
       - name: Publish Test Report
         uses: dorny/test-reporter@v1
